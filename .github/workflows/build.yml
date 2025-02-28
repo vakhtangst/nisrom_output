@@ -5,7 +5,7 @@ on:
     workflow_dispatch:
 
 jobs:
-  Explore-GitHub-Actions:
+  Build nisrom and print firmware info:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
@@ -24,6 +24,7 @@ jobs:
           cd nissutils/cli_utils
           sed -i '/^CFLAGS/s/$/ -I md5/' Makefile
           make
-      - run: |
+      - name: Outputs
+        run: |
           ls -la  
           bash nisrom_output.sh
