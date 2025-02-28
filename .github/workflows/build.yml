@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./app
+        working-directory: ./
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
@@ -29,6 +29,5 @@ jobs:
           ls -la
           make
       - run: |
-
           ls -la
           bash nisrom_output.sh
