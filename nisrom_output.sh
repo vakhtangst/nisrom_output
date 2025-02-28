@@ -2,7 +2,7 @@
 
 DIR="."
 
-COMMAND="./cli_utils/nisrom"
+COMMAND=".nissutils/cli_utils/nisrom"
 
 for file in "$DIR"/*.bin; do
     [ -e "$file" ] || continue
