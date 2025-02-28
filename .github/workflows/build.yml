@@ -19,9 +19,7 @@ jobs:
         with:
           repository: 'fenugrec/nissutils'
           submodules: true
-      - run: echo $PWD
-      - run: ls -la
-      - run: cd cli_utils
-      - run: echo $PWD
-      - run: ls -la
-      - run: make
+      - run: |
+          cd cli_utils
+          ls -la
+          make
