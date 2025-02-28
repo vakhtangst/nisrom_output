@@ -27,4 +27,4 @@ jobs:
       - name: Outputs
         run: |
           ls -la  
-          bash nisrom_output.sh
+          bash scripts/nisrom_output.sh
