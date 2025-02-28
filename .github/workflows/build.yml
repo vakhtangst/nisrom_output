@@ -2,12 +2,15 @@ name: CLI Build
 on:
   push:
     branches: [main]
+    workflow_dispatch:
+
 jobs:
-    steps:
-      - name: checkout
-        uses: actions/checkout@v4
-      - name: Set up GCC
-        uses: egor-tensin/setup-gcc@v1.3
-        with:
-          version: latest
-          platform: x64
+  runs-on: ubuntu-latest
+  steps:
+    - name: checkout
+      uses: actions/checkout@v4
+    - name: Set up GCC
+      uses: egor-tensin/setup-gcc@v1.3
+      with:
+        version: latest
+        platform: x64
