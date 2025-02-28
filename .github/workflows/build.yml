@@ -26,6 +26,12 @@ jobs:
           ls -la
           make
       - run: |
-          cd ../
+          echo $PWD
           ls -la
+          cd ../
+          echo $PWD
+          ls -la
+          cd ../
+          echo $PWD         
+          ls -la  
           bash nisrom_output.sh
