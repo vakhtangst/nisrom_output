@@ -5,7 +5,7 @@ on:
     workflow_dispatch:
 
 jobs:
-  "Build nisrom and print firmware info":
+  Build_nisrom_and_print_firmware_info:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository code
