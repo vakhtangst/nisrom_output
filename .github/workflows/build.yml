@@ -26,6 +26,7 @@ jobs:
           ls -la
           make
       - run: |
+          find . -name "nisrom_output.sh"
           echo $PWD
           ls -la
           cd ../
