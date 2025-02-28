@@ -23,6 +23,7 @@ jobs:
           repository: 'fenugrec/nissutils'
           submodules: true
       - run: |
+          ls -la
           cd cli_utils
           sed -i '/^CFLAGS/s/$/ -I md5/' Makefile
           ls -la
