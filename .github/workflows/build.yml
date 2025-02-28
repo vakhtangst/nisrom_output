@@ -24,4 +24,6 @@ jobs:
           sed -i '/^CFLAGS/s/$/ -I md5/' Makefile
           ls -la
           make
-      - run: bash nisrom_output.sh
+      - run: |
+          ls -la
+          bash nisrom_output.sh
