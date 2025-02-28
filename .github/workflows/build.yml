@@ -26,5 +26,4 @@ jobs:
           make
       - name: Outputs
         run: |
-          ls -la  
           bash scripts/nisrom_output.sh
