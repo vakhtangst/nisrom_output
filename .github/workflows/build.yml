@@ -7,9 +7,6 @@ on:
 jobs:
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./
     steps:
       - name: Check out repository code
         uses: actions/checkout@v4
@@ -29,5 +26,6 @@ jobs:
           ls -la
           make
       - run: |
+          cd ../
           ls -la
           bash nisrom_output.sh
