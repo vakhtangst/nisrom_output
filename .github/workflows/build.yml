@@ -17,6 +17,6 @@ jobs:
           platform: x64
       - uses: actions/checkout@v4
         with:
-          repository: 'https://github.com/fenugrec/nissutils'
+          repository: 'fenugrec/nissutils'
           submodules: true
       - run: echo $pwd
