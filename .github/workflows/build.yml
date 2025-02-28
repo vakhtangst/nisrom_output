@@ -15,10 +15,11 @@ jobs:
       #   with:
       #     version: latest
       #     platform: x64
-      # - uses: actions/checkout@v4
-      #   with:
-      #     repository: 'fenugrec/nissutils'
-      #     submodules: true
+      - uses: actions/checkout@v4
+        with:
+          path: 'nissutils'
+          repository: 'fenugrec/nissutils'
+          submodules: true
       # - run: |
       #     ls -la
       #     cd cli_utils
