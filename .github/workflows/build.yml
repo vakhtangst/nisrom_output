@@ -21,6 +21,7 @@ jobs:
           submodules: true
       - run: echo $PWD
       - run: ls -la
-      - run: cd nissutils/cli_utils
+      - run: cd cli_utils
       - run: echo $PWD
+      - run: ls -la
       - run: make
